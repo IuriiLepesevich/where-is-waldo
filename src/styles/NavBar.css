@@ -1,0 +1,32 @@
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+.NavBar > ul {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(1rem + 1vw);
+  padding: 10px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.NavBar li {
+  border-bottom: 3px solid black;
+  transition: 0.3s;
+}
+
+.NavBar li:hover {
+  border-bottom: 3px solid blueviolet;
+}
