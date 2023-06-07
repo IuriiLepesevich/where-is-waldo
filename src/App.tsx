@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
 import Leaderboard from "./components/Leaderboard/Leaderboard";
 import Game from "./components/Game/Game";
+import levels from "./gameData";
 
 function App() {
   return (
@@ -12,10 +13,10 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route index element={<Home levels={levels} />} />
             <Route path="leaderboard" element={<Leaderboard />} />
           </Route>
-          <Route path="/:id" element={<Game />} />
+          <Route path="/game/:id" element={<Game />} />
         </Routes>
       </main>
       <footer>Created by Iurii Lepesevich</footer>

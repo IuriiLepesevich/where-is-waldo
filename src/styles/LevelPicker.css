@@ -1,0 +1,49 @@
+.LevelPicker {
+  width: max(400px, 40%);
+  height: 700px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.LevelPicker:hover {
+  transform: scale(1.03);
+}
+
+.LevelPicker .level-name {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.LevelPicker .characters {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+
+.LevelPicker .character {
+  flex: 1;
+  display: flex;
+}
+
+.LevelPicker .character-image {
+  flex: 1;
+}
+
+.LevelPicker .character-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex: 3;
+}

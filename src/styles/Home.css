@@ -1,0 +1,5 @@
+.Home {
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-around;
+}
