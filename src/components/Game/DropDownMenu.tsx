@@ -11,16 +11,19 @@ function DropDownMenu(props: any) {
         top: `${coordinates.y}px`,
       }}
     >
-      {characters.map((character: any) => (
-        <div
-          className="menu-character"
-          key={character.id}
-          id={character.id}
-          onClick={handleChoice}
-        >
-          {character.name}
-        </div>
-      ))}
+      {characters.map(
+        (character: any) =>
+          !character.isChosen && (
+            <div
+              className="menu-character"
+              key={character.id}
+              id={character.id}
+              onClick={handleChoice}
+            >
+              {character.name}
+            </div>
+          )
+      )}
     </div>
   );
 }

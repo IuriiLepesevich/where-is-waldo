@@ -1,0 +1,23 @@
+.CharacterHeader {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.CharacterHeader .character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CharacterHeader .character-image {
+  background-color: white;
+  height: 200px;
+}
+
+.CharacterHeader .character-name {
+  font-size: 2rem;
+  font-weight: bold;
+}

@@ -34,13 +34,16 @@
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   padding: 3px;
-  gap: 5px;
+  gap: 15px;
 }
 
 .LevelPicker .character {
   flex: 1 1 33%;
   display: flex;
-  border: 3px dotted red;
+}
+
+.LevelPicker .character:not(:last-child) {
+  border-right: 2px solid green;
 }
 
 .LevelPicker .character-image {
