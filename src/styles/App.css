@@ -5,13 +5,17 @@
 }
 
 .App main {
+  background: linear-gradient(blueviolet, rgb(255, 50, 50));
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 .App footer {
-  background-color: darkblue;
+  background-color: black;
+  padding: 10px;
   color: white;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }

@@ -7,13 +7,13 @@ function Home(props: any) {
   return (
     <div className="Home">
       {levels.map((level: any) => (
-        <LevelPicker
-          key={level.id}
-          levelNumber={level.id}
-          levelName={level.name}
-          imageSource={level.image}
-          characters={level.characters}
-        />
+          <LevelPicker
+            key={level.id}
+            levelNumber={level.id}
+            levelName={level.name}
+            imageSource={level.image}
+            characters={level.characters}
+          />
       ))}
     </div>
   );
