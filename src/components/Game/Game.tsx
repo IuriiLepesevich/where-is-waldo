@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/Game.css";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import CharacterHeader from "./CharacterHeader";
 import Timer from "./Timer";
 import DropDownMenu from "./DropDownMenu";
 import MessageBox from "./MessageBox";
 import SubmitBox from "./SubmitBox";
+import { getCharCoordinates, bounds } from "../../firebase";
 
 interface characterInterface {
   id: string;
@@ -14,34 +15,6 @@ interface characterInterface {
   image: string;
   isChosen: boolean;
 }
-
-interface bounds {
-  top: number;
-  left: number;
-  bottom: number;
-  right: number;
-}
-
-const characterRelativeCoordinates: any = {
-  robocop: {
-    top: 52.02,
-    left: 40.34,
-    bottom: 62.9,
-    right: 48.6,
-  },
-  wheatley: {
-    top: 91.76,
-    left: 28.51,
-    bottom: 94.71,
-    right: 34.06,
-  },
-  r2d2: {
-    top: 45.15,
-    left: 24.26,
-    bottom: 51.8,
-    right: 28.43,
-  },
-};
 
 function Game(props: any) {
   const params = useParams();
@@ -97,7 +70,7 @@ function Game(props: any) {
         isVisible: false,
         isCorrect: false,
       });
-    }, 3000);
+    }, 2000);
 
     return () => {
       clearInterval(messageBoxDataInterval);
@@ -140,7 +113,7 @@ function Game(props: any) {
     const currentCharacterId: string = e.target.id;
 
     const isChosenCorrectly = checkIntersection(
-      characterRelativeCoordinates[currentCharacterId as keyof any],
+      await getCharCoordinates(currentCharacterId),
       relativeCoordinates.x,
       relativeCoordinates.y
     );
@@ -170,7 +143,7 @@ function Game(props: any) {
 
   return (
     <div className="Game">
-      {isGameEnded && <SubmitBox />}
+      {isGameEnded && <SubmitBox levelNumber={currentLevel.id} time={time} />}
       <div className="header">
         <Link to="/" className="home-link">
           Home
@@ -180,7 +153,7 @@ function Game(props: any) {
         ) : (
           <CharacterHeader currentCharacters={currentCharacters} />
         )}
-        <Timer time={time} />
+        <Timer time={time / 1} />
       </div>
       <div className="game-frame">
         {messageBoxData.isVisible && (

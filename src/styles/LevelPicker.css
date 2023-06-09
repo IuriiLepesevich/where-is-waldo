@@ -1,5 +1,5 @@
 .LevelPicker {
-  width: 100%;
+  width: clamp(400px, 100%, 800px);
   height: 100%;
   border: 3px solid black;
   display: flex;
@@ -9,11 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.3s;
-}
-
-.LevelPickerLink {
-  width: max(400px, 40%);
-  height: 700px;
 }
 
 .LevelPicker:hover {
@@ -30,6 +25,7 @@
 }
 
 .LevelPicker .characters {
+  width: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
@@ -38,25 +34,22 @@
 }
 
 .LevelPicker .character {
-  flex: 1 1 33%;
+  width: 33%;
   display: flex;
-}
-
-.LevelPicker .character:not(:last-child) {
-  border-right: 2px solid green;
 }
 
 .LevelPicker .character-image {
   flex: 1;
-  width: 60px;
+  width: 37%;
   background-color: white;
 }
 
 .LevelPicker .character-name {
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.7rem;
+  font-size: calc(0.5rem + 1vw);
   font-weight: bold;
   flex: 3;
 }

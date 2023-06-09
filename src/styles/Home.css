@@ -3,3 +3,8 @@
   display: flex;
   justify-content: space-around;
 }
+
+.Home .link {
+  width: max(400px, 40%);
+  height: 700px;
+}

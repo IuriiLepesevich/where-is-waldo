@@ -1,0 +1,18 @@
+.Leaderboard .levels {
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Leaderboard .levels .level-holder {
+  width: max(400px, 40%);
+  height: 700px;
+}
+
+.Leaderboard .levels .LevelPicker {
+  height: 300px;
+}
+
+.Leaderboard .levels .LevelPicker .characters {
+  height: 100px;
+}

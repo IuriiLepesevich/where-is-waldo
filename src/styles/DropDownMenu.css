@@ -6,19 +6,18 @@
   flex-direction: column;
   background-color: black;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
 .DropDownMenu .menu-character {
   cursor: pointer;
-  padding: 3px 20px 3px 5px;
+  padding: 5px 35px 5px 5px;
   transition: 0.3s;
 }
 
 .DropDownMenu .menu-character:hover {
   background-color: blueviolet;
-  padding: 3px 20px 3px 5px;
 }
 
 .DropDownMenu .menu-character:not(:last-child) {

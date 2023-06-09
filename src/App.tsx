@@ -14,7 +14,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home levels={levels} />} />
-            <Route path="leaderboard" element={<Leaderboard />} />
+            <Route
+              path="leaderboard"
+              element={<Leaderboard levels={levels} defaultLevel={1} />}
+            />
           </Route>
           <Route path="/game/:id" element={<Game levels={levels} />} />
         </Routes>
