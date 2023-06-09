@@ -8,9 +8,8 @@ function Home(props: any) {
   return (
     <div className="Home">
       {levels.map((level: any) => (
-        <Link to={`game/${level.id}`} className="link">
+        <Link key={level.id} to={`game/${level.id}`} className="link">
           <LevelPicker
-            key={level.id}
             levelNumber={level.id}
             levelName={level.name}
             imageSource={level.image}

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "../../styles/Leaderboard.css";
 import LevelPicker from "../LevelPicker";
+import TableScore from "./TableScore";
 
 function Leaderboard(props: any) {
   const { levels, defaultLevel } = props;
   const [currentLevel, setCurrentLevel] = useState(defaultLevel);
+
   return (
     <div className="Leaderboard">
       <div className="levels">
@@ -23,6 +25,10 @@ function Leaderboard(props: any) {
           </div>
         ))}
       </div>
+      <TableScore
+        levelId={currentLevel}
+        levelName={levels[currentLevel - 1].name}
+      />
     </div>
   );
 }

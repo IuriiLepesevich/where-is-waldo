@@ -31,6 +31,11 @@ export interface bounds {
   right: number;
 }
 
+export interface leaderData {
+  name: string;
+  time: number;
+}
+
 function saveResult(levelNumber: number, username: string, time: number) {
   addDoc(collection(firestore, `leaderboard${levelNumber}`), {
     name: username,
@@ -47,4 +52,17 @@ async function getCharCoordinates(charId: string) {
   return charCoordinates.data() as bounds;
 }
 
-export { saveResult, getCharCoordinates };
+async function getLeaderboardData(levelId: number) {
+  const leaderDataQuery = query(
+    collection(firestore, `leaderboard${levelId}`),
+    orderBy("time", "asc")
+  );
+  const leaderDocs = await getDocs(leaderDataQuery);
+  const leaderData = leaderDocs.docs.map((doc) => doc.data());
+
+  console.log(leaderData[0].date.toDate().getFullYear());
+
+  return leaderData as leaderData[];
+}
+
+export { saveResult, getCharCoordinates, getLeaderboardData };

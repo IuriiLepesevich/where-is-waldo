@@ -1,12 +1,17 @@
-.Leaderboard .levels {
-  padding: 40px 50px;
+.Leaderboard {
+  padding: 40px 200px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.Leaderboard .levels {
+  display: flex;
+  justify-content: space-between;
 }
 
 .Leaderboard .levels .level-holder {
   width: max(400px, 40%);
-  height: 700px;
 }
 
 .Leaderboard .levels .LevelPicker {

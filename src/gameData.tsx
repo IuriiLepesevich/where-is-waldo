@@ -6,7 +6,7 @@ import R2D2 from "./images/R2D2.jpg";
 const levels = [
   {
     id: 1,
-    name: "Level 1",
+    name: "Anarchy",
     image: picture1,
     characters: [
       {
