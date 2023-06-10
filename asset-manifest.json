@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b6d214f.css",
-    "main.js": "/static/js/main.227d063f.js",
-    "static/media/level2.jpg": "/static/media/level2.0548b888f76dc9cb954b.jpg",
-    "static/media/RoboCop.jpg": "/static/media/RoboCop.62e13d21e71f6d8635e2.jpg",
-    "static/media/level1.jpg": "/static/media/level1.4d13286fb88522594f8a.jpg",
-    "static/media/Steven.jpg": "/static/media/Steven.72f401738d30601719aa.jpg",
-    "static/media/R2D2.jpg": "/static/media/R2D2.8637cd856d54f3e1b5fe.jpg",
-    "static/media/Wheatley.png": "/static/media/Wheatley.4b6570a7d4ee26ce50c3.png",
-    "static/media/Consuela.png": "/static/media/Consuela.b4fb830140ff083d0bb8.png",
-    "index.html": "/index.html",
-    "main.4b6d214f.css.map": "/static/css/main.4b6d214f.css.map",
-    "main.227d063f.js.map": "/static/js/main.227d063f.js.map"
+    "main.css": "/where-is-waldo/static/css/main.4b6d214f.css",
+    "main.js": "/where-is-waldo/static/js/main.6e4b0b85.js",
+    "static/media/level2.jpg": "/where-is-waldo/static/media/level2.0548b888f76dc9cb954b.jpg",
+    "static/media/RoboCop.jpg": "/where-is-waldo/static/media/RoboCop.62e13d21e71f6d8635e2.jpg",
+    "static/media/level1.jpg": "/where-is-waldo/static/media/level1.4d13286fb88522594f8a.jpg",
+    "static/media/Steven.jpg": "/where-is-waldo/static/media/Steven.72f401738d30601719aa.jpg",
+    "static/media/R2D2.jpg": "/where-is-waldo/static/media/R2D2.8637cd856d54f3e1b5fe.jpg",
+    "static/media/Wheatley.png": "/where-is-waldo/static/media/Wheatley.4b6570a7d4ee26ce50c3.png",
+    "static/media/Consuela.png": "/where-is-waldo/static/media/Consuela.b4fb830140ff083d0bb8.png",
+    "index.html": "/where-is-waldo/index.html",
+    "main.4b6d214f.css.map": "/where-is-waldo/static/css/main.4b6d214f.css.map",
+    "main.6e4b0b85.js.map": "/where-is-waldo/static/js/main.6e4b0b85.js.map"
   },
   "entrypoints": [
     "static/css/main.4b6d214f.css",
-    "static/js/main.227d063f.js"
+    "static/js/main.6e4b0b85.js"
   ]
 }
