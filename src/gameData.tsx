@@ -1,13 +1,18 @@
-import picture1 from "./images/picture1.jpg";
+import level1 from "./images/level1.jpg";
 import RoboCop from "./images/RoboCop.jpg";
 import Wheatley from "./images/Wheatley.png";
 import R2D2 from "./images/R2D2.jpg";
+
+import level2 from "./images/level2.jpg";
+import Consuela from "./images/Consuela.png";
+import Steven from "./images/Steven.jpg";
+import Worm from "./images/Worm.jpg";
 
 const levels = [
   {
     id: 1,
     name: "Anarchy",
-    image: picture1,
+    image: level1,
     characters: [
       {
         id: "robocop",
@@ -28,23 +33,23 @@ const levels = [
   },
   {
     id: 2,
-    name: "Level 2",
-    image: "image2",
+    name: "A.D. 2.222",
+    image: level2,
     characters: [
       {
-        id: "character 2 1",
-        name: "Name 1",
-        image: "image 2 1",
+        id: "consuela",
+        name: "Consuela",
+        image: Consuela,
       },
       {
-        id: "character 2 2",
-        name: "Name 2",
-        image: "image 2 2",
+        id: "steven",
+        name: "Steven",
+        image: Steven,
       },
       {
-        id: "character 2 3",
-        name: "Name 3",
-        image: "image 2 3",
+        id: "worm",
+        name: "Worm",
+        image: Worm,
       },
     ],
   },

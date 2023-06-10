@@ -22,7 +22,24 @@ function App() {
           <Route path="/game/:id" element={<Game levels={levels} />} />
         </Routes>
       </main>
-      <footer>Created by Iurii Lepesevich</footer>
+      <footer>
+        <p>
+          Created by{" "}
+          <a href="https://github.com/IuriiLepesevich" className="footer-link">
+            Iurii Lepesevich
+          </a>
+        </p>
+        <p>
+          Art by{" "}
+          <a href="https://nexusroku.tumblr.com/" className="footer-link">
+            Laurie Greasley
+          </a>{" "}
+          |{" "}
+          <a href="https://potofu.me/chekavo" className="footer-link">
+            Egor Klyuchnyk
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }

@@ -10,7 +10,6 @@ function Home(props: any) {
       {levels.map((level: any) => (
         <Link key={level.id} to={`game/${level.id}`} className="link">
           <LevelPicker
-            levelNumber={level.id}
             levelName={level.name}
             imageSource={level.image}
             characters={level.characters}

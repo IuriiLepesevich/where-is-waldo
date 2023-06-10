@@ -1,16 +1,14 @@
 import React from "react";
 import "../styles/LevelPicker.css";
-import { Link } from "react-router-dom";
 
 interface levelPickerProps {
-  levelNumber: number;
   levelName: string;
   imageSource: string;
   characters: { id: string; name: string; image: string }[];
 }
 
 function LevelPicker(props: levelPickerProps) {
-  const { levelNumber, levelName, imageSource, characters } = props;
+  const { levelName, imageSource, characters } = props;
 
   return (
     <div

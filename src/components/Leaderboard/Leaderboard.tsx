@@ -17,7 +17,6 @@ function Leaderboard(props: any) {
             onClick={() => setCurrentLevel(level.id)}
           >
             <LevelPicker
-              levelNumber={level.id}
               levelName={level.name}
               imageSource={level.image}
               characters={level.characters}

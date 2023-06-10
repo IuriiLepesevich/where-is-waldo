@@ -12,8 +12,9 @@ function TableScore(props: any) {
   };
 
   const convertToDate = (dateObject: any) => {
-    return `${dateObject.getDay()}/${dateObject.getMonth()}/
-    ${dateObject.getFullYear()}   ${dateObject.getMinutes()}-${dateObject.getHours()}`;
+    return `${dateObject.getDay()}/${dateObject.getMonth()}/${dateObject.getFullYear()} ${String(
+      dateObject.getHours()
+    ).padStart(2, "0")}:${String(dateObject.getMinutes()).padStart(2, "0")}`;
   };
 
   useEffect(() => {
@@ -34,7 +35,7 @@ function TableScore(props: any) {
         </thead>
         <tbody>
           {leaderData.map((leader: any, index: number) => (
-            <tr key={leader.name}>
+            <tr key={leader.name} className="row">
               <td>{index + 1}</td>
               <td>{leader.name}</td>
               <td>{leader.time} sec</td>

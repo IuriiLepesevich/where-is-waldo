@@ -60,8 +60,6 @@ async function getLeaderboardData(levelId: number) {
   const leaderDocs = await getDocs(leaderDataQuery);
   const leaderData = leaderDocs.docs.map((doc) => doc.data());
 
-  console.log(leaderData[0].date.toDate().getFullYear());
-
   return leaderData as leaderData[];
 }
 
